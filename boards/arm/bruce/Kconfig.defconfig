@@ -1,0 +1,15 @@
+# josh-l-wang Bruce the keyboard configuration
+
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if BOARD_BRUCE
+
+config BOARD
+    default "bruce"
+
+config ZMK_KEYBOARD_NAME
+    default "Bruce the keyboard"
+
+endif # BOARD_BRUCE
+

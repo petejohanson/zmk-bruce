@@ -1,0 +1,10 @@
+file_format: "1"
+id: bruce
+name: Bruce the keyboard
+type: board
+arch: arm
+outputs:
+  - usb
+features:
+  - keys
+url: https://github.com/josh-l-wang/bruce-the-keyboard

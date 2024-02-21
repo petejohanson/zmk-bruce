@@ -1,0 +1,9 @@
+# josh-l-wang Bruce the keyboard configuration
+
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config BOARD_BRUCE
+    bool "Bruce the keyboard"
+    depends on SOC_STM32F072XB
+
