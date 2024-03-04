@@ -62,7 +62,19 @@
 
 };
 
+&clk_lsi {
+    status = "okay";
+};
+
 &clk_hsi {
+    status = "okay";
+};
+
+&clk_hsi14 {
+    status = "okay";
+};
+
+&clk_hsi48 {
     status = "okay";
 };
 
