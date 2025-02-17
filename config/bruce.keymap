@@ -7,13 +7,20 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    require-prior-idle-ms = <100>;
-    tapping-term-ms = <150>;
-    flavor = "tap-preferred";
-};
-
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        
+        
+        };
     combos {
         compatible = "zmk,combos";
 
@@ -75,7 +82,7 @@
             bindings = <
   &kp Q        &kp W        &kp E       &kp R       &kp T  &kp Y  &kp U      &kp I           &kp O          &kp P
   &kp A        &kp S        &kp D       &kp F       &kp G  &kp H  &kp J      &kp K           &kp L          &kp SINGLE_QUOTE
-  &mt LSHFT Z  &mt LCTRL X  &mt LALT C  &kp V       &kp B  &kp N  &kp M      &mt RALT COMMA  &mt RCTRL DOT  &mt RSHFT SLASH
+  &mt LSHFT Z  &hm LCTRL X  &hm LALT C  &kp V       &kp B  &kp N  &kp M      &hm RALT COMMA  &hm RCTRL DOT  &mt RSHFT SLASH
                             &kp LGUI    &lt 1 BSPC                &kp SPACE  &none
             >;
         };
