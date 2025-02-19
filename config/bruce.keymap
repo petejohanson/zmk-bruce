@@ -71,6 +71,12 @@
             layers = <2>;
             require-prior-idle-ms = <100>;
         };
+
+        Reset {
+            bindings = <&bootloader>;
+            key-positions = <13 12 11 10>;
+            layers = <2>;
+        };
     };
 
     keymap {
