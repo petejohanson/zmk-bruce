@@ -6,4 +6,7 @@
 config BOARD_BRUCE
     bool "Bruce the keyboard"
     depends on SOC_STM32F072XB
+    imply RETAINED_MEM
+    imply RETENTION
+    imply RETENTION_BOOT_MODE
 
